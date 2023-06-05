@@ -37,6 +37,10 @@ public class Conto {
     }
 
     public void subMoney(double money){
-        this.saldo -= money;
+        if (money < this.saldo){
+            this.saldo -= money;
+        } else {
+            System.out.println("Non disponi di tale somma");
+        }
     }
 }

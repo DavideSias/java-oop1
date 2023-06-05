@@ -1,9 +1,11 @@
 package org.lessons.java.shop;
 
+import java.text.DecimalFormat;
 import java.util.Random;
 
 public class Prodotto {
     Random random = new Random();
+    DecimalFormat formatCode = new DecimalFormat("00000000");
     private int codice;
     private String nome;
     private String descrizione;
@@ -11,7 +13,7 @@ public class Prodotto {
     private int iva;
 
     public Prodotto(String nome, String descrizione, double prezzo, int iva) {
-        this.codice = random.nextInt(1000,9999);
+        this.codice = random.nextInt(1,99999999);
         this.nome = nome;
         this.descrizione = descrizione;
         this.prezzo = prezzo;
