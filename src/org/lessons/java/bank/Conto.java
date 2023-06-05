@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Conto {
     Random random = new Random();
-    DecimalFormat decimalPrice = new DecimalFormat("#0.00€");
+
     private int numeroConto;
     private String proprietario;
     private double saldo;
@@ -20,8 +20,8 @@ public class Conto {
         return numeroConto;
     }
 
-    public String getSaldo(){
-        return decimalPrice.format(saldo);
+    public double getSaldo(){
+        return saldo;
     }
 
     public String getProprietario(){
