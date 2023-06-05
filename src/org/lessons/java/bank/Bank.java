@@ -35,10 +35,10 @@ public class Bank {
                     System.out.println("Indicare importo da prelevare: ");
                     double importo = scan.nextDouble();
                     if (importo > totSaldo){
+                        System.out.println("Non disponi di tale somma");
+                    } else {
                         contoDavide.subMoney(importo);
                         System.out.println("Saldo conto: " + decimalPrice.format(contoDavide.getSaldo()));
-                    } else {
-                        System.out.println("Non disponi di tale somma");
                     }
                 }
                 case "uscire" -> {
