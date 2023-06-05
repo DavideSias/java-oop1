@@ -20,31 +20,31 @@ public class Prodotto {
 
     // GETTERS
     public int getCodice(){
-        return this.codice;
+        return codice;
     }
 
     public String getNome(){
-        return this.nome;
+        return nome;
     }
 
     public String getDescrizione(){
-        return this.descrizione;
+        return descrizione;
     }
 
     public double getPrezzo(){
-        return this.prezzo;
+        return prezzo;
     }
 
     public int getIva(){
-        return this.iva;
+        return iva;
     }
 
     public double getPrezzoIva(){
-        return this.prezzo + ((this.prezzo * this.iva) / 100);
+        return prezzo + ((prezzo * iva) / 100);
     }
 
     public String getNomeEsteso(){
-        return this.codice + "-" + this.nome;
+        return codice + "-" + nome;
     }
 
     // SETTERS
